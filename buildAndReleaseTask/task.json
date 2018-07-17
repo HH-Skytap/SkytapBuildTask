@@ -1,0 +1,58 @@
+{
+    "id": "cb4a2c91-911e-4fa0-b916-90618f63e712",
+    "name": "BuildReleaseTask",
+    "friendlyName": "Build Release Task",
+    "description": "A Build and Release Task",
+    "helpMarkDown": "",
+    "category": "Utility",
+    "visibility": [
+        "Build",
+        "Release"
+    ],
+    "author": "Jason Marston",
+    "version": {
+        "Major": 1,
+        "Minor": 0,
+        "Patch": 25
+    },
+    "instanceNameFormat": "Deploy Template",
+    "inputs": [
+        {
+            "name": "username",
+            "type": "string",
+            "label": "Skytap Username",
+            "defaultValue": "",
+            "required": true,
+            "helpMarkDown": "The Skytap Username"
+        },
+        {
+            "name": "password",
+            "type": "string",
+            "label": "Skytap Password",
+            "defaultValue": "",
+            "required": true,
+            "helpMarkDown": "The Skytap Password"
+        },
+        {
+            "name": "template",
+            "type": "string",
+            "label": "Skytap Template ID",
+            "defaultValue": "",
+            "required": true,
+            "helpMarkDown": "The Skytap Template ID"
+        },
+        {
+            "name": "environment",
+            "type": "string",
+            "label": "Skytap Environment Name",
+            "defaultValue": "",
+            "required": true,
+            "helpMarkDown": "The Skytap Environment Name"
+        }
+    ],
+    "execution": {
+        "Node": {
+            "target": "index.js"
+        }
+    }
+}
