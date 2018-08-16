@@ -1,8 +1,8 @@
 {
-    "id": "cb4a2c91-911e-4fa0-b916-90618f63e712",
-    "name": "BuildReleaseTask",
-    "friendlyName": "Build Release Task",
-    "description": "A Build and Release Task",
+    "id": "d99a8055-47f4-4e98-a49e-f40d9b175ebf",
+    "name": "Skytap Environment Deployment",
+    "friendlyName": "Skytap Environment Deployment",
+    "description": "Skytap Environment Deployment",
     "helpMarkDown": "",
     "category": "Utility",
     "visibility": [
@@ -13,9 +13,9 @@
     "version": {
         "Major": 1,
         "Minor": 0,
-        "Patch": 25
+        "Patch": 0
     },
-    "instanceNameFormat": "Deploy Template",
+    "instanceNameFormat": "Skytap Deployment: Create Environment from Template",
     "inputs": [
         {
             "name": "username",
