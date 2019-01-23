@@ -24,26 +24,7 @@ Skytap.token(passwordCredentials)
         name: myEnvironment
     })
     .then(function(environment) {
-        skytap.environments.waitForState({ configuration_id: environment.id, runstate: "stopped"})
-        .then(function(state) {
-            console.log(state);
-            skytap.environments.start({ configuration_id: environment.id })
-            .then(function(environment) {
-                skytap.environments.waitForState({ configuration_id: environment.id, runstate: "running"})
-                .then(function(state) {
-                    console.log(state);
-                })
-                .fail(function(err) {
-                    console.log(err);
-                });
-            })
-            .fail(function(err) {
-             console.log(err);
-            });
-        })
-        .fail(function(err) {
-            console.log(err);
-        });
+        console.log(state);
     })
     .fail(function(err) {
         console.log(err);
